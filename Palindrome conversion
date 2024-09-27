@@ -1,0 +1,8 @@
+n=int(input())
+while True:
+ rev_n=int(str(n)[::-1])
+ sum_n=n+rev_n
+ if str(sum_n)==str(sum_n)[::-1]:
+ print(sum_n)
+ break
+ n=sum_n
