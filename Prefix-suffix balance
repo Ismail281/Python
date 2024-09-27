@@ -1,0 +1,11 @@
+n=int(input())
+l=list(map(int,input().split()))
+t=sum(l)
+res=[]
+lft,rt=0,0
+for i in range(0,n):
+ lft+=l[i]
+ rt=t-lft
+ val=abs(lft-rt)
+ res.append(val)
+print(res)
