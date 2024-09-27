@@ -1,0 +1,11 @@
+l=int(input())
+s=input()
+n=int(input())
+if l==0 or s=="":
+ print("NULL")
+elif n==0:
+ print(s)
+else:
+ n=n%l
+ res=s[n:]+s[:n]
+ print(res)
