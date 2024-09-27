@@ -1,0 +1,10 @@
+m=int(input())
+n=int(input())
+a=[]
+for _ in range(m):
+ row=list(map(int,input().split()))
+ a.append(row)
+for i in range(m):
+ a[i].sort()
+for i in a:
+ print(" ".join(map(str,i)))
