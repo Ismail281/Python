@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+res=[x for x in a if x>=0]
+mid=(len(res)-1)//2
+print(res[mid])
